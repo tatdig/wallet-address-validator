@@ -5509,6 +5509,12 @@ var NANOValidator = require('./nano_validator');
 
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [{
+    name: 'tdcoin',
+    symbol: 'tdc',
+    addressTypes: {prod: ['41', '52'], testnet: ['6f', '44']},
+    validator: BTCValidator
+},
+{
     name: 'bitcoin',
     symbol: 'btc',
     addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']},
